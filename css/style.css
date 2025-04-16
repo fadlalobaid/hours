@@ -1,0 +1,49 @@
+.digital-clock{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0 2rem;
+    border:0.5rem solid #2d2d2d;
+    display: flex;
+    justify-content: space-around;
+}
+.week{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 3rem ;
+    color:#2d2d2d;
+    font-weight: bold;
+    
+}
+.week .active{
+    color: aliceblue;
+}
+@font-face {
+    font-family: 'Digital7';
+    src: url('../font/digital-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.time{
+    font-family: 'Digital7', monospace;
+    
+}
+
+.hour,
+.min,
+.dot{
+display: inline-block;
+font-size: 13rem;
+
+
+}
+.min{
+    display: math;
+}
+.invsible{
+    visibility: hidden;
+}
